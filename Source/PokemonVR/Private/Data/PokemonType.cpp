@@ -12,12 +12,12 @@ PokemonType::~PokemonType()
 {
 }
 
-float PokemonType::GetEffective(TypeName pkmType)
+float PokemonType::GetEffective(Type pkmType)
 {
 	return 0.0f;
 }
 
-float PokemonType::Matchup(TypeName atk, TypeName def)
+float PokemonType::Matchup(Type atk, Type def)
 {
 	switch (atk)
 	{
