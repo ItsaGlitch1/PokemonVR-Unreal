@@ -8,7 +8,7 @@
 #include "Pokedex.h"
 
 /**
- * 
+ * Note to self: Refactor code to use Interfaces (this may take a while)
  */
 
 enum MoveCategory
