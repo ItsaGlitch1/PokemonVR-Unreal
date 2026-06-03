@@ -30,16 +30,16 @@ enum Color
 enum EggGroup
 {
 	Monster,
-	Fairy,
+	Fairy1,
 	HumanLike,
 	Field,
-	Flying,
-	Dragon,
-	Bug,
+	Flying1,
+	Dragon1,
+	Bug1,
 	Water1,
 	Water2,
 	Water3,
-	Grass,
+	Grass1,
 	Amorphous,
 	Mineral
 };
@@ -48,7 +48,7 @@ struct Pokemon
 {
 	int id;
 	std::string name;
-	Type types[2];
+	//Type types[2];
 	//genderRatio
 	int hp, atk, def, spa, spd, spe; //base stats
 	//abilities
