@@ -31,12 +31,12 @@ enum BattleStat
 
 enum NonVolatileStatus
 {
-	Burn,
-	Freeze,
-	Paralysis,
-	Poison,
-	BadPoison,
-	Sleep
+	BRN,
+	FRZ,
+	PAR,
+	PSN,
+	BadPSN,
+	SLP
 };
 
 enum VolatileStatus
