@@ -4,53 +4,27 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
-#include "../Data/PokemonTypes.h"
-#include "PokemonBase.generated.h"
-
+#include "Trainer.generated.h"
 
 UCLASS()
-class POKEMONVR_API APokemonBase : public ACharacter
+class POKEMONVR_API ATrainer : public ACharacter
 {
 	GENERATED_BODY()
 
 public:
 
+
 	/*
-	PID
-	isShiny
+	Name
+	TID
+	SID
 	Gender
-	Species
-	Nickname
-	EXP
-	Level
-	Nature
-	Held Item
-	Ability
-	IsEgg
-	Pokerus
-	
-	Met Location
-	Ball
-	Met Date
-	Met Level
-
-	Hp
-	Atk
-	Def
-	Spa
-	Spd
-	Spe
-	Evs
-	Ivs
-
-	Moves
-
-	Original Trainer
-	Friendship
+	Array Pokemon Party
+	Bag
 	*/
 
 	// Sets default values for this character's properties
-	APokemonBase();
+	ATrainer();
 
 protected:
 	// Called when the game starts or when spawned
@@ -63,5 +37,4 @@ public:
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
-	
 };
