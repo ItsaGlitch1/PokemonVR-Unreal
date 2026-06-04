@@ -9,20 +9,19 @@
  * 
  */
 
-UENUM()
-enum class EPokemonType
-{
-	Normal, Fire, Water, Electric, Grass, Ice, Fighting, Poison, Ground, Flying, Psychic, Bug, Rock, Ghost, Dragon, Dark, Steel, Fairy
-};
 
 USTRUCT()
 struct FPokemonType
 {
 	GENERATED_BODY()
 
+	UPROPERTY()
 	FString type;
+	UPROPERTY()
 	TArray<FString> superEffective;
+	UPROPERTY()
 	TArray<FString> notVeryEffective;
+	UPROPERTY()
 	TArray<FString> noEffect;
 };
 
@@ -31,6 +30,7 @@ struct FSaveWrapper
 {
 	GENERATED_BODY()
 
+	UPROPERTY()
 	TArray<FPokemonType> types;
 };
 
@@ -39,6 +39,4 @@ class POKEMONVR_API PokemonTypes
 public:
 	PokemonTypes();
 	~PokemonTypes();
-
-	static void GenerateTypeMatchupJson();
 };
