@@ -26,7 +26,7 @@ struct FPokemonType
 };
 
 USTRUCT()
-struct FSaveWrapper
+struct FPokemonTypeArray
 {
 	GENERATED_BODY()
 
@@ -37,6 +37,12 @@ struct FSaveWrapper
 class POKEMONVR_API PokemonTypes
 {
 public:
+	FPokemonTypeArray* list;
+
 	PokemonTypes();
 	~PokemonTypes();
+
+	void ReadTypes();
+
+	float GetTypeMatchup(FString attackType, FString defenderType);
 };
