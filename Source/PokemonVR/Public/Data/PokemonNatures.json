@@ -1,0 +1,129 @@
+{
+	"nature": [
+		{
+			"name": "Hardy",
+			"plus": "Atk",
+			"minus": "Atk"
+		},
+		{
+			"name": "Lonely",
+			"plus": "Atk",
+			"minus": "Def"
+		},
+		{
+			"name": "Adamant",
+			"plus": "Atk",
+			"minus": "SpAtk"
+		},
+		{
+			"name": "Naughty",
+			"plus": "Atk",
+			"minus": "SpDef"
+		},
+		{
+			"name": "Brave",
+			"plus": "Atk",
+			"minus": "Spe"
+		},
+		{
+			"name": "Bold",
+			"plus": "Def",
+			"minus": "Atk"
+		},
+		{
+			"name": "Docile",
+			"plus": "Def",
+			"minus": "Def"
+		},
+		{
+			"name": "Impish",
+			"plus": "Def",
+			"minus": "SpDef"
+		},
+		{
+			"name": "Lax",
+			"plus": "Def",
+			"minus": "SpDef"
+		},
+		{
+			"name": "Relaxed",
+			"plus": "Def",
+			"minus": "Spe"
+		},
+		{
+			"name": "Modest",
+			"plus": "SpAtk",
+			"minus": "Atk"
+		},
+		{
+			"name": "Mild",
+			"plus": "SpAtk",
+			"minus": "Def"
+		},
+		{
+			"name": "Bashful",
+			"plus": "SpAtk",
+			"minus": "SpAtk"
+		},
+		{
+			"name": "Rash",
+			"plus": "SpAtk",
+			"minus": "SpDef"
+		},
+		{
+			"name": "Quiet",
+			"plus": "SpAtk",
+			"minus": "Spe"
+		},
+		{
+			"name": "Calm",
+			"plus": "SpDef",
+			"minus": "Atk"
+		},
+		{
+			"name": "Gentle",
+			"plus": "SpDef",
+			"minus": "Def"
+		},
+		{
+			"name": "Careful",
+			"plus": "SpDef",
+			"minus": "SpAtk"
+		},
+		{
+			"name": "Quirky",
+			"plus": "SpDef",
+			"minus": "SpDef"
+		},
+		{
+			"name": "Sassy",
+			"plus": "SpDef",
+			"minus": "Spe"
+		},
+		{
+			"name": "Timid",
+			"plus": "Spe",
+			"minus": "Atk"
+		},
+		{
+			"name": "Hasty",
+			"plus": "Spe",
+			"minus": "Def"
+		},
+		{
+			"name": "Jolly",
+			"plus": "Spe",
+			"minus": "SpAtk"
+		},
+		{
+			"name": "Naive",
+			"plus": "Spe",
+			"minus": "SpDef"
+		},
+		{
+			"name": "Serious",
+			"plus": "Spe",
+			"minus": "Spe"
+		}
+	]
+}

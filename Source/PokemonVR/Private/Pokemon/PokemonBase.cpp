@@ -2,6 +2,9 @@
 
 
 #include "Pokemon/PokemonBase.h"
+#include "JsonObjectConverter.h"
+#include "Misc/FileHelper.h"
+#include "Misc/Paths.h"
 
 // Sets default values
 APokemonBase::APokemonBase()
@@ -30,5 +33,29 @@ void APokemonBase::SetupPlayerInputComponent(UInputComponent* PlayerInputCompone
 {
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
 
+}
+
+void APokemonBase::ReadNatures()
+{
+	FString path = FPaths::Combine(FPaths::GameSourceDir(), "PokemonVR", "Public", "Data", "PokemonNatures.json");
+
+	FString input;
+
+	IPlatformFile& FileMan = FPlatformFileManager::Get().GetPlatformFile();
+	if (!FileMan.FileExists(*path))
+	{
+		UE_LOG(LogTemp, Error, TEXT("Can't find natures at %s"), *path);
+		return;
+	}
+
+	if (!FFileHelper::LoadFileToString(input, *path))
+	{
+		UE_LOG(LogTemp, Error, TEXT("unable to read pokemon natures file"));
+	}
+
+	if (FJsonObjectConverter::JsonObjectStringToUStruct(input, natureList, 0, 0))
+	{
+		UE_LOG(LogTemp, Log, TEXT("loaded pokemon natures"));
+	}
 }
 
